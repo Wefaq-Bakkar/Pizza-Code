@@ -1,0 +1,345 @@
+*{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Header Start*/
+header{
+    position: fixed;
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.5s ease;
+    z-index: 1;
+}
+header.sticky{
+    background:white;
+    padding: 10px 100px;
+    box-sizing: 0 2px 5px rgb(0,0,0,0.2);
+}
+header .logo{
+    color:#fff;
+    font-size:30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color:#111;
+}
+header .nav_ul{
+    position:relative;
+    display: flex;
+}
+header .nav_ul li{
+    list-style: none;
+    margin-left: 20px;   
+}
+header .nav_ul li a{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+header .nav_ul li a:hover{
+    color:darkorange;
+}
+header.sticky .nav_ul li a{
+    color:#111;
+}
+header.sticky .nav_ul li a:hover{
+    color:darkorange;
+}
+/* banner section start*/
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Pizza_banner.jpg);
+    background-size: cover;
+}
+.banner .container{
+    text-align: center;
+    width: 900px;   
+}
+.banner .container h2{
+    color:#fff;
+    font-size: 50px;
+    margin-bottom:20px ;
+}
+.banner .container p{
+    font-size: 20px;
+    color:#fff;
+}
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    background: darkorange;
+    padding: 10px 20px ;  
+    transition: 0.3s ease;
+
+}
+.btn:hover{
+    scale:1.2;
+}
+
+/*About us start*/
+
+section{
+    padding: 100px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.row .slid{
+    width: 50%;
+    padding: 0px 20px;
+}
+.row .slid p{
+    font-size: 20px;
+    line-height: 50px;
+}
+.h_text{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.row .slid .imageBox{
+    width: 100%;
+    height: 100%;   
+}
+.row .slid .imageBox img{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover; 
+}
+/*menu Start*/
+.title{
+    width: 100%;
+    text-align: center;
+}
+.menu .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .container .box{
+    width: 450px;
+    margin:20px;
+    border:15px solid #fff;
+    box-shadow: 0 5px 35px rgb(0,0,0,0.8);
+}
+.menu .container .box .imageBox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.menu .container .box .imageBox img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.menu .container .box .imageBox img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+.menu .container .box .text{
+    padding: 20px;   
+}
+.menu .container .box .text h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/*Staff Section start*/
+.staff{
+    background:#efefef;
+}
+.staff .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.staff .container .box{
+    width: 250px;
+    margin: 15px;
+}
+.staff .container .box .imageBox{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.staff .container .box .imageBox img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.staff .container .box .imageBox img:hover{
+    transform: scale(1.1);
+}
+.staff .container .box .text h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+/*testimonials Section start*/
+.testimonials{
+    background: url(images/testimonials_bg.jpg);
+    background-size: cover;
+}
+.testimonials .title .h_text,
+.testimonials .title p
+{
+    color:#fff;
+}
+.testimonials .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.testimonials .container .box{
+    width: 340px;
+    margin:20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column  ;
+    justify-content: center;
+}
+.testimonials .container .box .imageBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.testimonials .container .box .imageBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .container .box .text{
+    padding: 20px;
+    text-align: center;
+}
+.testimonials .container .box .text p{
+    color:#666;
+    font-style: italic;
+}
+.testimonials .container .box .text h3{
+    font-size: 20px;
+    font-weight: 600;
+    color:darkorange;
+    margin-top: 20px;
+}
+/*Contact Us Start*/
+.contact{
+    background: url(images/contact_bg.jpg);
+    background-size: cover;
+}
+.contact_form{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 35px rgb(0,0,0,0.2);
+    max-width: 600px;
+    margin-top: 50px;
+}
+.contact_form h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact_form .inputBox{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact_form .inputBox input,
+.contact_form .inputBox textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #111;
+    resize: none;
+}
+.contact_form .inputBox input[type="submit"]{
+    background: darkorange;
+    color:#fff;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border:none;
+    width:100px;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+.contact_form .inputBox input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+/*footer*/
+.footer_container{
+    padding: 50px 0px;
+    background: #222;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container .box{
+    width: 300px;
+    padding: 0px 20px;    
+}
+.footer_container .box h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer_container .box i{
+    font-size: 20px;
+    color:darkorange;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+.footer_container .box i:hover{
+    transform: scale(1.7);
+    color:#fff;
+}
+.credit{
+    background: #111;
+    padding: 20px 0px;
+    color: #fff;
+    text-align: center;
+}
+.credit a{
+    color:darkorange;
+    text-decoration: none;
+}
+
